@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="F.png" type="image/png">
+  <title>Pixero</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="brand">Pixero</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Explore</a>
+        <a href="#about">Resources</a>
+        <a href="images.html">Videos</a>
+        <a href="#contact">More</a>
+      </div>
+    </div>
+    <div class="top-right-tools">
+      <div class="custom-language-selector">
+        <i class="fas fa-globe" id="lang-icon" title="Change Language"></i>
+        <ul class="language-list" id="languageList">
+          <li data-lang="en">English</li>
+          <li data-lang="ur">Urdu</li>
+          <li data-lang="fr">French</li>
+          <li data-lang="de">German</li>
+          <li data-lang="ar">Arabic</li>
+          <li data-lang="zh-CN">Chinese</li>
+          <li data-lang="es">Spanish</li>
+        </ul>
+      </div>
+
+      <div class="notification-icon" title="Notifications">
+        <i class="fas fa-bell"></i>
+        <span class="notif-badge">3</span>
+      </div>
+      <button class="upload-btn">Upload</button>
+    </div>
+
+  </header>
+
+  <section class="home">
+    <video class="video-slide active" src="13.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="11.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="8.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="6.mp4" autoplay muted loop></video>
+
+    <div class="content">
+      <p class="subtag">Explore top-quality, royalty-free photos and videos handpicked by creators, free for every
+        project.</p>
+
+      <div class="search-container">
+        <form action="images.html" method="get">
+          <div class="search-wrapper">
+            <input type="text" name="search" placeholder="Search for images..." class="search-input">
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="quick-searches">
+          <span style="font-weight: bold;">Popular searches:</span>
+          <i class="fas fa-search dot"></i>
+          <h5 style="font-weight: normal;">Gym</h5>
+          <i class="fas fa-search dot"></i>
+          <h5 style="font-weight: normal;">Fashion</h5>
+          <i class="fas fa-search dot"></i>
+          <h5 style="font-weight: normal;">Anime</h5>
+          <i class="fas fa-search dot"></i>
+          <h5 style="font-weight: normal;">Ronaldo</h5>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="media-icons">
+      <a
+        href="https://www.linkedin.com/in/faizan-ahmed-a97271331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/faizanahmed.off?igsh=MXFoeGliNHUydm43cw=="><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/fazi-cmd"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <section class="categories-section">
+    <div class="categories-container">
+      <h2>Popular Photo Categories</h2>
+      <p>Explore our most popular collections</p>
+      <div class="categories-grid"></div>
+      <button class="show-more-btn">Show More Categories</button>
+    </div>
+  </section>
+  <section class="photo-moments">
+    <h2>The right photo for every moment</h2>
+    <p class="subheading">Browse professional photos to express your ideas and connect with your audience</p>
+
+    <div class="categories-container">
+      <div class="categories-scroll" id="categoriesScroll">
+        <!-- Categories will be added by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="collection">
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <div>
+          <h2>The inspiration gallery</h2>
+          <p>Step into a world of creative energy—explore collections crafted to inspire your next masterpiece</p>
+        </div>
+        <button class="explore-btn">Explore collections →</button>
+      </div>
+
+      <div class="gallery-images">
+        <div class="image-column">
+          <img src="images/img1a.jpg" alt="">
+          <img src="images/img1b.jpg" alt="">
+          <img src="images/img1c.jpg" alt="">
+        </div>
+        <div class="image-column">
+          <img src="images/img2a.jpg" alt="">
+          <img src="images/img2b.jpg" alt="">
+        </div>
+        <div class="image-column">
+          <img src="images/img3a.jpg" alt="">
+          <img src="images/img3b.jpg" alt="">
+        </div>
+        <!-- <div class="image-column">
+          <img src="images/img4a.jpg" alt="">
+          <img src="images/img4b.jpg" alt="">
+          <img src="images/img4c.jpg" alt="">
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="brand-section">
+    <div class="brand-container">
+      <h2>Trusted by the world’s largest companies</h2>
+      <div class="brand-logos">
+        <img src="images/logo1.png" alt="Brand 1">
+        <img src="images/logo2.png" alt="Brand 2">
+        <img src="images/logo3.png" alt="Brand 3">
+        <img src="images/logo4.png" alt="Brand 4">
+        <img src="images/logo7.png" alt="Brand 5">
+        <img src="images/logo8.png" alt="Brand 6">
+      </div>
+      <p>Need a personalized package for your business?</p>
+      <button class="quote-btn">Request a Quote</button>
+    </div>
+  </section>
+
+
+  <section class="free-images-section">
+    <div class="text-side">
+      <h1>Free Images of the Week</h1>
+      <p>These select assets are only free for a limited time. Download them now and check back next week!</p>
+    </div>
+
+    <div class="image-cards">
+      <div class="image-card">
+        <div class="image-wrapper">
+          <img src="images/pubg.jpg" alt="Image 1" onclick="openLightbox(this)">
+          <div class="overlay">
+            <div class="text">
+              <h3>Free stock image</h3>
+              <p>by Faizan</p>
+            </div>
+            <span class="download-arrow" onclick="downloadImage(event, 'images/pubg.jpg')">&#x2B07;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-card">
+        <div class="image-wrapper">
+          <img src="images/llahore.jpeg" alt="Image 2" onclick="openLightbox(this)">
+          <div class="overlay">
+            <div class="text">
+              <h3>Free stock image</h3>
+              <p>by Arslan Sheikh</p>
+            </div>
+            <span class="download-arrow" onclick="downloadImage(event, 'images/llahore.jpeg')">&#x2B07;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Preview" />
+  </div>
+
+
+
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+            alt="Our Team">
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">About <span>Pixero</span></h2>
+        <p class="about-text">Pixero delivers stunning, high-quality visuals—empowering creatives, marketers, and brands
+          to bring their ideas to life with unmatched imagery and video.</p>
+
+        <div class="about-features">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Premium Visual Assets</h3>
+              <p>Stunning 4K/8K images and videos, professionally crafted for elite creative projects</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Global Community</h3>
+              <p>Collaborate with top-tier creators across 100+ countries in a dynamic, inspiring community</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Weekly Updates</h3>
+              <p>New high-quality visuals added weekly—keep your work ahead of the curve</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="learn-more-btn">Learn More About Us</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Get In Touch</h2>
+        <p>Need rare stock images, custom videos, or licensing info? Our team can find the perfect media for your
+          project</p>
+      </div>
+
+      <div class="contact-content">
+        <form id="myContactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" name="user_name" required>
+            <label>Your Name</label>
+            <span class="focus-border"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" name="user_email" required>
+            <label>Email Address</label>
+            <span class="focus-border"></span>
+          </div>
+          <div class="form-group">
+            <textarea name="message" required></textarea>
+            <label>Your Message</label>
+            <span class="focus-border"></span>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Message
+            <svg viewBox="0 0 24 24">
+              <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+            </svg>
+          </button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <div>
+              <h3>Call Us</h3>
+              <p>+923104735375</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <div>
+              <h3>Email Us</h3>
+              <p>fhatzsff@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.instagram.com/faizanahmed.off?igsh=MXFoeGliNHUydm43cw==" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm6.409-9.051c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335 .157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/faizan-ahmed-a97271331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <div class="faq-header">
+        <h2>FAQ's</h2>
+        <p>Find quick answers to common questions about Pixero</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is Pixero really free to use?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! Pixero offers a vast collection of completely free images and videos. You can download and use them
+              for personal and commercial projects without paying anything.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do I need to credit the creators?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>While not mandatory, we always appreciate when users credit the creators. It helps support their work and
+              encourages them to contribute more content.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I contribute my own content?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>You can upload your content using our Upload button in the top right corner. All submissions go through a
+              quality review before being published.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What file formats do you support?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>For images: JPG, PNG, WEBP. For videos: MP4, MOV, WEBM. Maximum file size is 50MB for images and 500MB
+              for videos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I use Pixero content for commercial projects?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! All content on Pixero is licensed under Creative Commons Zero (CC0), which means you can use
+              it freely for any purpose, including commercial projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About Pixero</h3>
+        <p>Pixero is a premium gallery of high-quality images and videos for creative professionals and enthusiasts.</p>
+        <div class="footer-social">
+          <a href="https://github.com/fazi-cmd"><i class="fab fa-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/faizan-ahmed-a97271331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/faizanahmed.off?igsh=MXFoeGliNHUydm43cw=="><i
+              class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="images.html">Gallery</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Premium Content</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Categories</h3>
+        <ul class="footer-links">
+          <li><a href="images.html?category=nature">Nature</a></li>
+          <li><a href="images.html?category=sports">Sports</a></li>
+          <li><a href="images.html?category=wallpaper">Wallpapers</a></li>
+          <li><a href="images.html?category=fashion">Fashion</a></li>
+          <li><a href="images.html?category=gym">Fitness</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Muridke District Sheikhpura, Pakistan</p>
+        <p><i class="fas fa-phone"></i> +9231435331</p>
+        <p><i class="fas fa-envelope"></i> contact@pixero.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Pixero. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <!-- Floating Contact Button -->
+  <div id="contact-floating-btn" onclick="toggleContactForm()">
+    💬
+  </div>
+
+  <!-- Contact Form Popup -->
+  <div id="contact-popup">
+    <div class="contact-header">
+      <h3>Contact Us</h3>
+      <span id="close-contact" onclick="toggleContactForm()">✖</span>
+    </div>
+    <form id="myContactForm">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+
+  <div id="google_translate_element" style="display:none;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="index.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

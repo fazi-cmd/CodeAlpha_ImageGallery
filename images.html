@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixero Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="images.css">
+</head>
+
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1 class="gallery-title" id="category-title">Pixero Gallery</h1>
+            <p class="gallery-subtitle">Discover amazing images and videos</p>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" id="search-input" placeholder="Search for images or videos...">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="controls">
+                <div class="media-type-selector">
+                    <button class="media-type-btn" data-type="image">Images</button>
+                    <button class="media-type-btn" data-type="video">Videos</button>
+                </div>
+                <div class="results-count">
+                    <span id="results-count">0 results</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="media-grid" id="media-grid"></div>
+
+        <button class="load-more-btn" id="load-more-btn">Discover More</button>
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="close-btn"><i class="fas fa-times"></i></button>
+        <div class="lightbox-content">
+            <div class="media-container">
+                <img src="" alt="" class="lightbox-media" id="lightbox-img">
+                <video controls class="lightbox-media" id="lightbox-video"></video>
+            </div>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+        <div class="lightbox-controls">
+            <button class="nav-btn" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn" id="next-btn"><i class="fas fa-chevron-right"></i></button>
+            <button class="download-btn" id="download-btn">
+                <i class="fas fa-download"></i> Download
+            </button>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>
